@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int donuts;
+    int milks;
+    
+    cout << "Enter number of donuts: ";
+    cin >> donuts;
+    cout << "Enter number of glasses of milk: ";
+    cin >> milks;
+
+    double dpg = static_cast<double>(donuts) / milks;
+    
+    cout << donuts << " donuts.\n"
+         << milks << " glasses of milk.\n"
+         << "You have " << dpg << " donuts for each glass of milk.\n";
+         
+    return 0;
+}
